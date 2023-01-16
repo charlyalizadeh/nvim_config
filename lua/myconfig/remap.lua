@@ -18,7 +18,16 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Replace current word --
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
--- Reset highlight
+-- Reset highlight --
 vim.keymap.set("n", "<leader><leader>",  [[:noh<CR>]])
+
+-- Split --
+vim.keymap.set("n", "<leader>sj",  [[:set sb <bar> :split <CR>]])
+vim.keymap.set("n", "<leader>sk",  [[:set nosb <bar> :split <CR>]])
+vim.keymap.set("n", "<leader>sh",  [[:set nospr <bar> :vsplit <CR>]])
+vim.keymap.set("n", "<leader>sl",  [[:set spr <bar> :vsplit <CR>]])
+
+-- Fix wrong highlight --
+vim.keymap.set("n", "<F2>", [[:syntax sync fromstart <CR>]])
