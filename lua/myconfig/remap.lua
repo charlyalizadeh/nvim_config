@@ -31,3 +31,6 @@ vim.keymap.set("n", "<leader>sl",  [[:set spr <bar> :vsplit <CR>]])
 
 -- Fix wrong highlight --
 vim.keymap.set("n", "<F2>", [[:syntax sync fromstart <CR>]])
+
+-- Quit Terminal --
+vim.keymap.set("t", ",<Esc>", "<C-\\><C-N>")

@@ -91,5 +91,12 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'echasnovski/mini.indentscope'
     use 'kyazdani42/blue-moon'
-    use "olimorris/onedarkpro.nvim"
+    use 'AlexvZyl/nordic.nvim'
+    use 'olimorris/onedarkpro.nvim'
+
+    use 'vim-pandoc/vim-pandoc'
+    use 'vim-pandoc/vim-pandoc-syntax'
+    use 'vim-pandoc/vim-rmarkdown'
+    use 'chrisbra/csv.vim'
+    use 'lervag/vimtex'
 end)
